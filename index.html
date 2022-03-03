@@ -7,28 +7,71 @@
 
     </head>
 	<body>
-        <div class="topnav">
-            <b>
-            <a class="active" onclick="showContent('home')">home</a>
-            <a href="#projects" onclick="showContent('projects')">projects</a>
-            <a href="#music" onclick="showContent('music')">music</a>
-            <a href="#contact" onclick="showContent('contact')">contact</a>
-            </b>
-        </div>
-        <div id="content">
-            <div id='home' style="display:block;">
-                <h1>home</h1>
+        <div class="bg-image"></div>
+            <div class="fg">
+            <div class="topnav">
+                <b>
+                <a id="nav_home" class="active" href="" onclick="showContent('home')">home</a>
+                <a id="nav_projects" onclick="showContent('projects')">projects</a>
+                <a id="nav_music" onclick="showContent('music')">music</a>
+                <a id="nav_contact" onclick="showContent('contact')">contact</a>
+                </b>
             </div>
-            <div id='projects' style="display:none;">
-                <h1>projects</h1>
-            </div>
-            <div id='music' style="display:none;">
-                <h1>music</h1>
-            </div>
-            <div id='contact' style="display:none;">
-                <h1>contact</h1>
-            </div>
-        </div>
+            <div id="content">
+                <div id='home' style="display:block;">
+                    <h1>home</h1>
+                    <p>Hi! Welcome to my website. I'm Eric, an undergraduate student in his final year at the University of California, Berkeley.</p>
+                    <p>I love programming and data analysis! Feel free to look around and check out some of my projects.</p>
+                    <p>Aside from computer science, my hobbies include cooking, gaming, reading and making music.</p>
+                </div>
 
+
+                <div id='projects' style="display:none;">
+                    <h1>projects</h1>
+                    <div class="itembox_list">    
+                        <div class="itembox">
+                            <div class="item-content">
+                                <p id="item-title">Minecraft Renders</p>
+                            </div>
+                            <img src="img/hc-render.png">
+                        </div>
+                        <div class="itembox">
+                            <div class="item-content">
+                                <p id="item-title">Homography Recovery and Image Stitching</p>
+                            </div>
+                            <img src="img/homography.png">
+                        </div>
+                        <div class="itembox">
+                            <div class="item-content">
+                                <p id="item-title">Facial Keypoints CNN</p>
+                            </div>
+                            <img src="img/faceCNN.png">
+                        </div>
+                        <div class="itembox">
+                            <div class="item-content">
+                                <p id="item-title">High Dynamic Range Imaging</p>
+                            </div>
+                            <img src="img/memorial-church.png">
+                        </div>
+                        <div class="itembox">
+                            <div class="item-content">
+                                <p id="item-title">Coming soon</p>
+                            </div>
+                            <img src="img/hc-render.png">
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                <div id='music' style="display:none;">
+                    <h1>music</h1>
+                    <p>coming soon. please peruse <a href="https://soundcloud.com/i_sentient">my soundcloud in the meantime</a></p>
+                </div>
+                <div id='contact' style="display:none;">
+                    <h1>contact</h1>
+                </div>
+            </div>
+    </div>
     </body>
 </html>
